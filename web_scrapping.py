@@ -11,6 +11,7 @@ tags = soup.find_all("div", class_="tags")
 
 dataQuotes = []
 
+#For loop for qoutes
 for quote, author, tag in zip(quotes, authors, tags):
     dataQuotes.append([quote.text, author.text])
 
